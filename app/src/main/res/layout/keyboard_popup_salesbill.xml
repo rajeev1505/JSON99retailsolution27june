@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/popup"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#fffdd0"
+    android:orientation="vertical" >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="25dp"
+        android:weightSum="1.0"
+        android:focusable="false"
+        android:layout_marginLeft="30px">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:inputType="number"
+            android:focusable="false"
+            android:textColor="#000000"
+            android:text="Grand Total"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:id="@+id/grandtot_Tv"
+            android:textSize="14px"
+            android:gravity="left"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:fontFamily="sans-serif"
+            android:layout_weight="0.5"
+            android:textColor="#000000"
+            android:ems="10"
+            android:id="@+id/grandtot_ed"
+            android:textSize="10px"
+            android:background="@drawable/border_style"
+            android:layout_gravity="center_vertical"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:weightSum="1.0"
+        android:focusable="false"
+        android:layout_marginLeft="30px"
+
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:inputType="number"
+            android:focusable="false"
+            android:textColor="#000000"
+            android:text="Received Amount"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:id="@+id/reciveamount_tv"
+            android:textSize="14px"
+            android:gravity="left"
+            android:layout_gravity="center_vertical"
+            />
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:inputType="numberDecimal"
+            android:fontFamily="sans-serif"
+            android:textColor="#000000"
+            android:ems="10"
+            android:id="@+id/reciveamountdialog"
+            android:textSize="10px"
+            android:background="@drawable/border_style"
+            android:layout_gravity="center_vertical"
+            >
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:paddingTop="5dp"
+
+        android:layout_marginLeft="30px"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_weight="0.1"
+            android:textColor="#000000"
+            android:text="Expected Exchange"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:id="@+id/expectedchange_tv"
+            android:textSize="14px"
+            android:gravity="left"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:text=""
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:id="@+id/expectedchange"
+            android:textSize="10px"
+            android:gravity="left"
+            android:background="@drawable/border_style"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/close"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="120px"
+        android:layout_height="40px"
+        android:text="PayByCash"
+        android:textSize="12px"
+
+        android:layout_marginLeft="20px"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/close1"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="120px"
+        android:visibility="invisible"
+        android:layout_height="20px"
+        android:text="PayByCash1"
+        android:textSize="12px"
+
+        android:layout_marginLeft="20px"
+        android:clickable="true"/>
+
+
+</LinearLayout>
+
