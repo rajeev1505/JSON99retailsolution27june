@@ -105,7 +105,7 @@ public class RemoteVideoService extends Service
         for (Display display : displays)
         {
             //Set up Presentation class and show
-            presentation = new RemoteVideoPresentation(this, display, video,newStream);
+            presentation = new RemoteVideoPresentation(this, display, video,newStream,linearLayouter);
             presentation.show();
         }
 

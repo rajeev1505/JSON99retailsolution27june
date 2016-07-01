@@ -141,13 +141,16 @@ public class RemoteVideoPresentation extends Presentation {
     ListView listview;
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
-    public RemoteVideoPresentation(Context outerContext, Display display, Uri video, TextView newsticker)
+    public RemoteVideoPresentation(Context outerContext, Display display, Uri video, TextView newsticker,
+                                    LinearLayout linearLayouter)
     {
         super(outerContext, display);
         mDisplay = display;
         mContext = outerContext;
         mVideoUri = video;
         adNewsStream=newsticker;
+        ll1=linearLayouter;
+
 
        /* //mVideoUri1=video1;
         //mVideoUri2=video2;
@@ -478,10 +481,15 @@ public class RemoteVideoPresentation extends Presentation {
                 horizontalOuterLayout.getViewTreeObserver().removeGlobalOnLayoutListener(this);
                 getScrollMaxAmount();
                 startAutoScrolling();
-               // LockScroll();
+                //LockScroll();
 
             }
         });
+    }
+
+    /*for Locking Scroll upper side company images*/
+    public void LockScroll() {
+        ((LockableScrollView) findViewById(R.id.horiztonal_scrollview_id)).setScrollingEnabled(false);
     }
 
 
@@ -518,12 +526,10 @@ public class RemoteVideoPresentation extends Presentation {
     @Override
     protected void onStart()
     {
-      //  syncDataBundle = getSyncBudle(getContext());//get sync parameters as bundle
-        //these can be obtained from a form
-      //  setSyncParamView(syncDataBundle);//display the parameters
+
         playVideo();
         playNewStream();
-
+        scrolllogos();
         super.onStart();
     }
 
