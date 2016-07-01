@@ -46,6 +46,10 @@ public class Activity_Installation extends Activity implements OnClickListener {
     private ProgressDialog pDialog;
     //rahul created this file
     // JSON parser class
+
+
+
+    //rajeev diwan
     JSONParser jsonParser = new JSONParser();
     private static final String LOGIN_URL = "http://52.76.28.14/Android/arun.php";
     private static final String TAG_SUCCESS = "success";
